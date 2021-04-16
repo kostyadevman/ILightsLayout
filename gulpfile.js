@@ -142,7 +142,7 @@ const server = (done) => {
 exports.server = server;
 
 // Watcher
-
+ 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles"));
   gulp.watch("source/js/*.js").on("change", gulp.series("scripts"), sync.reload);

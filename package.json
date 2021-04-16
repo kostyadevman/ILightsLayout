@@ -45,5 +45,7 @@
   "engines": {
     "node": "12.18.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "simplebar": "^5.3.0"
+  }
 }
