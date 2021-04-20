@@ -1,7 +1,7 @@
 {
-  "name": "ILightsLayout",
+  "name": "ILights-layout",
   "private": true,
-  "description": "Интернет магазин светильников",
+  "description": "Интернет-магазин светильников",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "9.8.4",
@@ -45,7 +45,5 @@
   "engines": {
     "node": "12.18.2"
   },
-  "dependencies": {
-    "simplebar": "^5.3.0"
-  }
+  "dependencies": {}
 }

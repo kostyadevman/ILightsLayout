@@ -168,9 +168,13 @@
   width: 29px;
   height: 19px;
 
+  span {
+    display: block;
+  }
+
   &:hover,
   &:active {
-    div,
+    span,
     &:before,
     &:after {
       background-color:@basic-white;
@@ -182,7 +186,7 @@
     content: "";
   }
 
-  div,
+  span,
   &:before,
   &:after {
     position: absolute;
@@ -193,7 +197,7 @@
     transition: background-color 0.3s ease-in-out;
   }
 
-  div {
+  span {
     top: 50%;
     transform: translateY(-50%);
   }

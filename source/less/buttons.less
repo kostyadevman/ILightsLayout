@@ -4,4 +4,33 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
 }
+
+.btn-reset:hover,
+.bnt-reset:active {
+  opacity: 0.6;
+}
+
+.btn {
+  padding: 8px 21px;
+  font-weight: 700;
+  font-size: 14px;
+
+  &__main {
+  background-color: @basic-orange;
+  color: @basic-grey;
+  }
+
+  &__more {
+    background-color: @special-blue;
+    color: @basic-white;
+  }
+
+  &__clear {
+    border: 1px solid @special-grey_graf;
+    color: @basic-grey;
+  }
+}
+
+

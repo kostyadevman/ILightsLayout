@@ -1,0 +1,141 @@
+.products__title {
+  padding-top: 22px;
+  padding-bottom: 15px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.products-grid {
+	display: grid;
+	grid-column: 3 span;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.products-grid__item {
+  border: 1px solid @special-grey_graf;
+  background-color: @basic-white;
+}
+
+.products__section {
+
+  &--new {
+    margin-bottom: 25px;
+  }
+
+  &--all {
+    margin-bottom: 20px;
+  }
+}
+
+.product {
+  position: relative;
+  padding-top: 50px;
+}
+
+.product__teg {
+  position: absolute;
+  padding: 6px 15px;
+  top: 0;
+  left: 0;
+  background-color: @basic-orange;
+
+  span {
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
+
+.product__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  width: 100%;
+  height: 180px;
+  cursor: pointer;
+}
+
+.product__content {
+  margin-bottom: auto;
+  margin-bottom: 57px;
+  padding: 0 20px;
+}
+
+.product__title {
+  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  transition: opacity .3s ease-in-out;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.product__list {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.product__item {
+  position: relative;
+  padding-left: 20px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    top: 8px;
+    left: 0;
+    background-color: @basic-orange;
+  }
+}
+
+.product-price {
+  font-weight: 700;
+  font-size: 20px;
+  color: @basic-orange;
+}
+
+.product__btns {
+  display: flex;
+}
+
+.product__btn {
+  padding-top: 19px;
+  padding-bottom: 19px;
+
+  &--more {
+    padding-left: auto;
+    padding-right: auto;
+    width: 80%;
+    background-color: @special-blue;
+    color: @basic-white;
+  }
+
+  &--plus {
+    position: relative;
+    padding-left: 19px;
+    padding-right: 19px;
+    width: 20%;
+    color: @basic-grey;
+    border-top: 1px solid @special-grey_graf;
+
+    &:before {
+      content: "+";
+      position: absolute;
+      top: 50%;
+      left: 40%;
+      transform: translateY(-50%);
+      font-weight: 700;
+      font-size: 24px;
+    }
+  }
+}
+
